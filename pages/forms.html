@@ -370,7 +370,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Forms</h1>
+                    <h1 class="page-header">Registrasi</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -379,12 +379,20 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Basic Form Elements
+                            Registrasi Mahasiswa Baru
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <form role="form">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control">
+                                        </div>
                                         <div class="form-group">
                                             <label>Nama Lengkap</label>
                                             <input class="form-control">
@@ -395,14 +403,28 @@
                                         </div>
                                         <div class="form-group">
                                             <label>NIM</label>
-                                            <input class="form-control">
+                                            <input type="number" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Strata</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="Strata" id="strata1" value="S1" checked>S1
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="Strata" id="strata2" value="S2">S2
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="Strata" id="strata3" value="S3">S3
+                                                </label>
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <label>E-mail</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Judul Riset</label>
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
@@ -410,96 +432,45 @@
                                             <input type="file">
                                         </div>
                                         <div class="form-group">
+                                            <label>Judul Riset</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
                                             <label>Waktu Residensi</label>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>2 Jam
+                                                    <input type="radio" name="Residensi" id="Residensi1" value="2" checked>2 Jam
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">4 Jam
+                                                    <input type="radio" name="Residensi" id="Residensi2" value="4">4 Jam
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">8 Jam
+                                                    <input type="radio" name="Residensi" id="Residensi3" value="8">8 Jam
                                                 </label>
                                             </div>
-
                                         </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-                                <div class="col-lg-6">
-                                    <h1>Disabled Form States</h1>
-                                    <form role="form">
-                                        <fieldset disabled>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled input</label>
-                                                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+                                        <div class="form-group">
+                                            <label>Publikasi Ilmiah (Format IEEE)</label>
+                                            <div id='TextBoxesGroup'>
+                                                <div id="TextBoxDiv1">
+                                                    <label>Publikasi ke-1 : </label><input type='textbox' class="form-control" id='textbox1'>
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled select menu</label>
-                                                <select id="disabledSelect" class="form-control">
-                                                    <option>Disabled select</option>
-                                                </select>
+                                                <input type='button' value='+' class="btn btn-default" id='addButton'>
+                                                <input type='button' value='-' class="btn btn-default" id='removeButton'>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-lg-10 col-lg-offset-2">
+                                                <button type="submit" class="btn btn-default">Submit Button</button>
+                                                <button type="reset" class="btn btn-default">Reset Button</button>
                                             </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox">Disabled Checkbox
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Disabled Button</button>
-                                        </fieldset>
-                                    </form>
-                                    <h1>Form Validation States</h1>
-                                    <form role="form">
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Input with success</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
-                                        </div>
-                                        <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Input with warning</label>
-                                            <input type="text" class="form-control" id="inputWarning">
-                                        </div>
-                                        <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Input with error</label>
-                                            <input type="text" class="form-control" id="inputError">
-                                        </div>
-                                    </form>
-                                    <h1>Input Groups</h1>
-                                    <form role="form">
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
-                                            </span>
-                                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
-                                                </button>
-                                            </span>
                                         </div>
                                     </form>
                                 </div>
-                                <!-- /.col-lg-6 (nested) -->
                             </div>
                             <!-- /.row (nested) -->
                         </div>
@@ -527,7 +498,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-
+    <script src="../dist/js/tambah-publikasi.js"></script>
 </body>
 
 </html>
