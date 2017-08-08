@@ -502,3 +502,7 @@ table.dataTable thead .sorting:after {
     background: #1abc9c;
     color: white !important
 }
+
+.div-button{
+  margin-left: 20px;
+}
