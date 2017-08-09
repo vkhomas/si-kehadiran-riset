@@ -55,7 +55,23 @@
             </div>
             <!-- /.navbar-header -->
 
-            <a href="login.html"><button type="reset" class=" btn btn-danger btn-s div-top div-right" style="float:right">Logout</button></a>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="pribadi-dosen.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
@@ -63,7 +79,7 @@
                             Victorio Khomas
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-database fa-fw"></i> Daftar Mahasiswa Bimbingan</a>
+                            <a href="index.html"><i class="fa fa-database fa-fw"></i> Halaman Utama</a>
                         </li>
                         <li>
                             <a href="alumni.html"><i class="fa fa-archive fa-fw"></i> Alumni</a>
@@ -104,11 +120,11 @@
                                 <tbody>
                                     <tr class="S3">
                                         <td>1</td>
-                                        <td><a href ="pribadi-dosen.html">text</a></td>
+                                        <td><a href ="pribadi-unapproved.html">text</a></td>
                                     </tr>
                                     <tr class="even gradeC">
                                         <td>Trident</td>
-                                        <td><a href ="pribadi-dosen.html">Internet Explorer 5.0</a></td>
+                                        <td><a href ="pribadi-unapproved.html">Internet Explorer 5.0</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -144,18 +160,5 @@
     <script src="../dist/js/sb-admin-2.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-s3').DataTable({
-            responsive: true
-        });
-        $('#dataTables-s2').DataTable({
-            responsive: true
-        });
-        $('#dataTables-s1').DataTable({
-            responsive: true
-        });        
-    });    
-    </script>
 </body>
 </html>
