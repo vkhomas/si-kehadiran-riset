@@ -506,3 +506,11 @@ table.dataTable thead .sorting:after {
 .div-button{
   margin-left: 20px;
 }
+
+.div-top{
+  margin-top: 8px;
+}
+
+.div-right{
+  margin-right: 10px;
+}
