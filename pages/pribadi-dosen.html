@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../dist/css/zabuto_calendar.min.css">
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -76,6 +77,9 @@
                         </li>
                         <li>
                             <a href="alumni.html"><i class="fa fa-archive fa-fw"></i> Alumni</a>
+                        </li>
+                        <li>
+                            <a href="status-kehadiran.html"><i class="fa fa-user fa-fw"></i> Status Kehadiran</a>
                         </li>
                        <li>
                             <a href="approvedmhs.html"><i class="fa fa-pause fa-fw"></i> Unapproved Mahasiswa</a>
@@ -137,7 +141,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label>Residensi</label>
-                                <div>Calendar</div>
+                                <div id="my-calendar"></div>
                             </div>
                         </div>
                     </div>
@@ -161,6 +165,17 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../dist/js/zabuto_calendar.min.js"></script>
+
+    <script type="application/javascript">
+        var eventData = [
+            {"date":"2017-08-01","badge":false,"title":"888","footer":"sada"},
+            {"date":"2017-08-02","badge":true,"title":"777"}
+        ];
+        $(document).ready(function () {
+            $("#my-calendar").zabuto_calendar({language: "en", today:true, data:eventData});
+        });
+    </script>
 
 </body>
 
